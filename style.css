@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Button with transition */
+.hover-btn {
+  padding: 10px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  transition: background 0.3s;
+}
+.hover-btn:hover {
+  background: orange;
+}
+
+/* Animated bouncing box */
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 20px auto;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50px); }
+}
+
+/* JS box */
+#jsBox {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 20px auto;
+  position: relative;
+}
+.move {
+  animation: slide 2s forwards;
+}
+@keyframes slide {
+  from { left: 0; }
+  to { left: 150px; }
+}
